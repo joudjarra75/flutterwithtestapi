@@ -48,7 +48,7 @@ class _UserScreenState extends State<UserScreen> {
 userList = [];
   for(int i = 0 ; i < resListOfUser.length ; i++){
     Map <String,dynamic> userMap = resListOfUser[i];
-   User user =  User.toMap(userMap);
+   User user =  User.fromMap(userMap);
    setState(() {
      userList!.add(user);
    });
